@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displaying Best School for 10 times by using "until" loop
+text="Best School"
+i=10
+until [ $i == 0 ]
+do 
+  echo "$text"
+  ((i=i-1))
+done
