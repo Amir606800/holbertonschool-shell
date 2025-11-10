@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displaying Best School 10 time by using while
+text='Best School'
+i=0
+while [ "$i" -lt 10 ];
+do
+  echo "$text"
+  ((i+=1))
+done
