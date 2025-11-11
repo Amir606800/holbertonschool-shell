@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Counting Stars
+awk -F'[[:space:]]+' 'BEGIN {count=0} {if()} END{print $1, $9}' apache-access.log
