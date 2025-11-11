@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# /etc/passwd in brief form
+while IFS=":" read -r uname _ uid _ _ uhome _ ; do
+  echo "$uname:$uid:$uhome"
+done < /etc/passwd
