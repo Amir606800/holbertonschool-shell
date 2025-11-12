@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Do not stop me now
-source ./died
-
-"$die" -15 -f "4-to_infinity_and_beyond"
+mv 4-to_infinity_and_beyond /etc/init.d/
+/etc/init.d/4-to_infinity_and_beyond stop
