@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Complex pid files killing
+PATH_PID="/var/run/myscript.pid"
+echo $$ > "$PATH_PID"
+
+trap "echo I hate the kill command" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+trap "rm -rf $PATH_PID; exit" SIGQUIT SIGTERM
+
+while true; do
+echo "To infinity and beyond"
+sleep 1
+done
+
