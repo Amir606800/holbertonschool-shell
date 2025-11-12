@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Complex pid files killing
 PATH_PID="/var/run/myscript.pid"
-touch "$PATH_PID"
 echo $$ > "$PATH_PID"
 
 trap 'echo I hate the kill command; rm -rf $PATH_PID; exit' SIGTERM
