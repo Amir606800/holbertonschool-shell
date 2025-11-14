@@ -22,7 +22,7 @@ case "$1" in
   ;;
   restart)
     kill "$(cat $PID_FILE)"
-    rm -f "$PID_FILE"
+    mv "$PID_FILE" "$PID_FILE_TEMP"
     echo "manage_my_process restarted"
     sleep 1
     $PROCESS &
