@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Sleep 2 sec in each loop iteration
+trap "echo Terminated; exit" SIGINT
+
 while true; do
 echo "To infinity and beyond"
 sleep 2

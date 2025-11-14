@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Do not stop me now
-mv 4-to_infinity_and_beyond /etc/init.d/
-/etc/init.d/4-to_infinity_and_beyond stop
+
+pkill -2 -f "./4-to_infinity_and_beyond"
