@@ -5,7 +5,9 @@ PID_FILE="/var/run/my_process.pid"
 
 case "$1" in
   start)
-    if [ -f $PID_FILE ]
+    if [ -f "$PID_FILE" ]; then
+       echo "Proccess is already running"
+    fi
 
     $PROCESS &
     echo $! > "$PID_FILE"
